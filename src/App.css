@@ -1,7 +1,9 @@
 .container {
   width: 90vw;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: "Bricolage Grotesque", serif;
 }
 
@@ -38,6 +40,7 @@
   display: flex;
   color: #fafcfe;
   font-size: 18px;
+  padding: 1vh 0;
   text-transform: capitalize;
 
   &:hover {
@@ -70,10 +73,10 @@
   gap: 36px;
   color: #fafcfe;
   letter-spacing: 1px;
-  padding: 3vh 0;
+  padding: 2vh 0;
 
-  p{
-    font-size: 28px;
+  p {
+    font-size: 20px;
   }
 }
 
@@ -110,18 +113,18 @@ button {
   background-color: #383838;
 }
 
-@media screen and (width <= 660px){
-  .details-container{
+@media screen and (width <= 660px) {
+  .details-container {
     align-items: center;
   }
 
-  .img-container{
+  .img-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  p{
+  p {
     font-size: 10px;
   }
 }

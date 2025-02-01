@@ -105,7 +105,6 @@ function App() {
           </div>
         )}
         <div className="divider"></div>
-
         <div
           className="row"
           onClick={() => {
@@ -143,7 +142,6 @@ function App() {
           </div>
         )}
         <div className="divider"></div>
-
         <div
           className="row"
           onClick={() => {
@@ -177,7 +175,6 @@ function App() {
           </div>
         )}
         <div className="divider"></div>
-
         <div
           className="row"
           onClick={() => {
@@ -202,7 +199,6 @@ function App() {
           </div>
         )}
         <div className="divider"></div>
-
         <div
           className="row"
           onClick={() => {
@@ -243,7 +239,6 @@ function App() {
           </div>
         )}
         <div className="divider"></div>
-
         <div
           className="row"
           onClick={() => {
@@ -291,7 +286,6 @@ function App() {
           </div>
         )}
         <div className="divider"></div>
-
         <div
           className="row"
           onClick={() => {
@@ -325,8 +319,8 @@ function App() {
             </div>
           </div>
         )}
+        <div className="divider"></div>
       </div>
-      <div className="divider"></div>
     </>
   );
 }
