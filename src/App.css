@@ -71,6 +71,10 @@
   color: #fafcfe;
   letter-spacing: 1px;
   padding: 3vh 0;
+
+  p{
+    font-size: 28px;
+  }
 }
 
 .btn-container {
