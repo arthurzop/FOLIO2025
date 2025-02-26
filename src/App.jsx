@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AnimatedCursor from "react-animated-cursor";
 import "./App.css";
 
 import prof1 from "./assets/prof1.png";
@@ -55,7 +56,35 @@ function App() {
 
   return (
     <>
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={8}
+        color="248, 249, 250"
+        outerAlpha={1}
+        innerScale={.5}
+        outerScale={8}
+        outerStyle={{
+          mixBlendMode: "difference",
+        }}
+        clickables={[
+          "a",
+          "p",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
       <div className="container">
+        <a href="javascript:void()" className="aa">
+          asdasd
+        </a>
         <div className="head">
           <p>projetos</p>
           <p>Categoria</p>
