@@ -1,11 +1,114 @@
 .container {
   width: 100vw;
   margin: 10vh;
-  padding: 0 1vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-family: "Bricolage Grotesque", serif;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vw;
+  position: fixed;
+  top: 0;
+  color: #f8f9fa;
+}
+
+.header h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.link-container {
+  display: flex;
+  gap: 32px;
+}
+
+.a-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: relative;
+}
+
+.a-container,
+.a-container:after,
+.a-container:before {
+  transition: all 0.8s;
+}
+
+.cv:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  content: ".";
+  background-color: #e20001;
+  color: transparent;
+  height: 2px;
+}
+
+.cv:hover:after {
+  align-self: self-start;
+  width: 100%;
+}
+
+.be:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  content: ".";
+  background-color: #0057ff;
+  color: transparent;
+  height: 2px;
+}
+
+.be:hover:after {
+  align-self: self-start;
+  width: 100%;
+}
+.gi:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  content: ".";
+  background-color: #070808;
+  color: transparent;
+  height: 2px;
+}
+
+.gi:hover:after {
+  align-self: self-start;
+  width: 100%;
+}
+.li:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  content: ".";
+  background-color: #007ab9;
+  color: transparent;
+  height: 2px;
+}
+
+.li:hover:after {
+  align-self: self-start;
+  width: 100%;
+}
+
+.table-container {
+  width: 100vw;
+  padding: 2vw;
 }
 
 .head {
@@ -18,7 +121,7 @@
   font-size: 15px;
 }
 
-.aa{
+.aa {
   font-size: 100px;
   color: white;
 }
