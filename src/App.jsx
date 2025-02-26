@@ -13,6 +13,8 @@ import sup2 from "./assets/sup2.png";
 import code1 from "./assets/code1.png";
 import code2 from "./assets/code2.png";
 
+import pdf from "./assets/pdf/curriculo_artur_medeiros.pdf";
+
 function App() {
   let [prof, setProf] = useState(false);
   let [luiz, setLuiz] = useState(false);
@@ -54,6 +56,10 @@ function App() {
     }
   };
 
+  const handlePdf = () => {
+    window.open(pdf, "_blank");
+  };
+
   return (
     <>
       <AnimatedCursor
@@ -90,16 +96,33 @@ function App() {
                 target="_blank"
                 target="_blank"
                 target="_blank" */}
-            <a href="javascript:void()" className="a-container cv">
+            <a
+              onClick={() => {
+                window.open(pdf, "_blank");
+              }}
+              className="a-container cv"
+            >
               Curriculum
             </a>
-            <a href="javascript:void()" className="a-container be">
+            <a
+              href="https://www.behance.net/arthurzop"
+              target="_blank"
+              className="a-container be"
+            >
               Behance
             </a>
-            <a href="javascript:void()" className="a-container gi">
+            <a
+              href="https://github.com/arthurzop"
+              target="_blank"
+              className="a-container gi"
+            >
               Github
             </a>
-            <a href="javascript:void()" className="a-container li">
+            <a
+              href="https://www.linkedin.com/in/artur-medeiros-7169b8266/"
+              target="_blank"
+              className="a-container li"
+            >
               Linkedin
             </a>
           </nav>
