@@ -236,4 +236,16 @@ button {
   p {
     font-size: 10px;
   }
+
+  .link-container{
+    font-size: 14px;
+    gap: 1vw;
+    flex-direction: column;
+  }
+
+  .header{
+    align-items: flex-start;
+  }
+
+  
 }
