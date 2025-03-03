@@ -81,6 +81,7 @@ function App() {
           "a",
           "p",
           "h1",
+          "h6",
           'input[type="text"]',
           'input[type="email"]',
           'input[type="number"]',
@@ -95,7 +96,7 @@ function App() {
       />
 
       <div className="container">
-        <div className="header">
+        <div className="header" data-aos="fade-down" data-aos-duration="600">
           <h1>artur medeiros</h1>
           <nav className="link-container">
             {/* target="_blank"
@@ -140,7 +141,6 @@ function App() {
                 data-aos="fade-down"
                 data-aos-delay="100"
                 data-aos-duration="1000"
-                data-aos-anchor-placement="bottom-bottom"
               >
                 artur medeiros
               </h1>
@@ -148,7 +148,6 @@ function App() {
                 data-aos="fade-down"
                 data-aos-delay="200"
                 data-aos-duration="1500"
-                data-aos-anchor-placement="bottom-bottom"
               >
                 web & design
               </h1>
@@ -156,7 +155,6 @@ function App() {
                 data-aos="fade-down"
                 data-aos-delay="300"
                 data-aos-duration="1750"
-                data-aos-anchor-placement="bottom-bottom"
               >
                 @ são paulo - BR
               </h1>
@@ -164,13 +162,16 @@ function App() {
                 data-aos="fade-down"
                 data-aos-delay="400"
                 data-aos-duration="2000"
-                data-aos-anchor-placement="bottom-bottom"
               >
                 potfolio © 2025
               </h1>
+              <h6>
+                {" "}
+                <a href="#target">⏷</a>
+              </h6>
             </div>
           </section>
-          <section>
+          <section >
             <div className="table-container">
               <div className="head">
                 <p>projetos</p>
@@ -499,7 +500,7 @@ function App() {
                   </div>
                 </motion.div>
               )}
-              <div className="divider"></div>
+              <div className="divider" id="target"></div>
             </div>
           </section>
         </div>
