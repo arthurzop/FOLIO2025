@@ -7,7 +7,7 @@
   color: #f8f9fa;
 }
 
-.header {
+header {
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@
   backdrop-filter: blur(2px);
 }
 
-.header h1 {
+header h1 {
   font-size: 20px;
   font-weight: normal;
 }
@@ -79,8 +79,6 @@ section {
 .indicator {
   animation: float 1s linear infinite;
 
-  position: absolute;
-  bottom: 0;
 
   img {
     user-select: none;
@@ -211,7 +209,22 @@ button {
   background-color: #383838;
 }
 
+.menu{
+  display: none;
+}
+
 @media screen and (width <= 660px) {
+
+  .menu{
+    display: block;
+    width: 24px;
+    color: #f8f9fa;
+  }
+
+  .link-container{
+    display: none;
+  }
+
   .details-container {
     align-items: center;
   }
@@ -226,7 +239,7 @@ button {
     font-size: 10px;
   }
 
-  .header {
+  header {
     align-items: flex-start;
   }
 }

@@ -12,8 +12,8 @@ import sup1 from "./assets/sup1.png";
 import sup2 from "./assets/sup2.png";
 import code1 from "./assets/code1.png";
 import code2 from "./assets/code2.png";
-import chevron from './assets/chevron.svg'
-import menu from './assets/menu.svg'
+import chevron from "./assets/chevron.svg";
+import menu from "./assets/menu.svg";
 
 import pdf from "./assets/pdf/curriculo_artur_medeiros.pdf";
 
@@ -98,7 +98,7 @@ function App() {
       />
 
       <div className="container">
-        <div className="header" data-aos="fade-down" data-aos-duration="600">
+        <header className="header" data-aos="fade-down" data-aos-duration="600">
           <h1
             onClick={() => {
               window.scrollTo(0, 0);
@@ -141,7 +141,8 @@ function App() {
               Linkedin
             </a>
           </nav>
-        </div>
+          <img src={menu} alt="menu hamburger" className="menu"/>
+        </header>
         <div id="top"></div>
         <div>
           <section>
@@ -174,9 +175,9 @@ function App() {
               >
                 potfolio © 2025
               </h1>
-                <a href="#target" className="indicator">
-                  <img src={chevron} alt="scroll down indicator" />
-                </a>
+              <a href="#target" className="indicator">
+                <img src={chevron} alt="scroll down indicator" />
+              </a>
             </div>
           </section>
           <section>
