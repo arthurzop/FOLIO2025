@@ -80,6 +80,9 @@ section {
 .main h6{
   user-select: none;
   animation: float 1s linear infinite;
+
+  position: absolute;
+  bottom: 0;
 }
 
 @keyframes float {

@@ -173,7 +173,6 @@ function App() {
                 potfolio © 2025
               </h1>
               <h6>
-                {" "}
                 <a href="#target">⏷</a>
               </h6>
             </div>
