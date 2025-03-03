@@ -97,7 +97,13 @@ function App() {
 
       <div className="container">
         <div className="header" data-aos="fade-down" data-aos-duration="600">
-          <h1>artur medeiros</h1>
+          <h1
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            artur medeiros
+          </h1>
           <nav className="link-container">
             {/* target="_blank"
                 target="_blank"
@@ -134,6 +140,7 @@ function App() {
             </a>
           </nav>
         </div>
+        <div id="top"></div>
         <div>
           <section>
             <div className="main">
@@ -171,7 +178,7 @@ function App() {
               </h6>
             </div>
           </section>
-          <section >
+          <section>
             <div className="table-container">
               <div className="head">
                 <p>projetos</p>
