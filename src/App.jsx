@@ -12,6 +12,8 @@ import sup1 from "./assets/sup1.png";
 import sup2 from "./assets/sup2.png";
 import code1 from "./assets/code1.png";
 import code2 from "./assets/code2.png";
+import chevron from './assets/chevron.svg'
+import menu from './assets/menu.svg'
 
 import pdf from "./assets/pdf/curriculo_artur_medeiros.pdf";
 
@@ -172,9 +174,9 @@ function App() {
               >
                 potfolio © 2025
               </h1>
-              <h6>
-                <a href="#target">⏷</a>
-              </h6>
+                <a href="#target" className="indicator">
+                  <img src={chevron} alt="scroll down indicator" />
+                </a>
             </div>
           </section>
           <section>

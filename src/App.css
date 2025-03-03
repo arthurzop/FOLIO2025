@@ -8,7 +8,7 @@
 }
 
 .header {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +60,6 @@
   width: 100%;
 }
 
-
 section {
   height: 100vh;
   display: flex;
@@ -77,12 +76,16 @@ section {
   font-size: calc(4vw + 8px);
 }
 
-.main h6{
-  user-select: none;
+.indicator {
   animation: float 1s linear infinite;
 
   position: absolute;
   bottom: 0;
+
+  img {
+    user-select: none;
+    width: calc(1vw + 8px);
+  }
 }
 
 @keyframes float {
@@ -221,12 +224,6 @@ button {
 
   p {
     font-size: 10px;
-  }
-
-  .link-container {
-    font-size: 14px;
-    gap: 1vw;
-    flex-direction: column;
   }
 
   .header {
