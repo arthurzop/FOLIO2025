@@ -15,6 +15,8 @@ import code2 from "./assets/code2.png";
 
 import pdf from "./assets/pdf/curriculo_artur_medeiros.pdf";
 
+import { motion } from "motion/react";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -187,7 +189,15 @@ function App() {
                 <p>2025</p>
               </div>
               {prof && (
-                <div className="details-container">
+                <motion.div
+                  className="details-container"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{
+                    height: prof ? "auto" : 0,
+                    opacity: prof ? 1 : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: "linear" }}
+                >
                   <p>
                     Projeto de Identidade Visual para meu chefe e antigo
                     professor Lucas Corrêa. Baseando a estética da marca na
@@ -217,7 +227,7 @@ function App() {
                     <img src={prof1} alt="" />
                     <img src={prof2} alt="" />
                   </div>
-                </div>
+                </motion.div>
               )}
               <div className="divider"></div>
               <div
@@ -231,7 +241,15 @@ function App() {
                 <p>2025</p>
               </div>
               {luiz && (
-                <div className="details-container">
+                <motion.div
+                  className="details-container"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{
+                    height: luiz ? "auto" : 0,
+                    opacity: luiz ? 1 : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: "linear" }}
+                >
                   <p>
                     Desenvolvi um projeto freelancer de identidade visual e web
                     design para o portfólio de outro ex-aluno do SENAI. Criei a
@@ -256,7 +274,7 @@ function App() {
                     <img src={luiz1} alt="" />
                     <img src={luiz2} alt="" />
                   </div>
-                </div>
+                </motion.div>
               )}
               <div className="divider"></div>
               <div
@@ -270,7 +288,15 @@ function App() {
                 <p>2024 - 2025</p>
               </div>
               {code && (
-                <div className="details-container">
+                <motion.div
+                  className="details-container"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{
+                    height: code ? "auto" : 0,
+                    opacity: code ? 1 : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: "linear" }}
+                >
                   <p>
                     O maior projeto no qual já trabalhei! Começamos
                     desenvolvendo a identidade visual e, a partir dela, criamos
@@ -290,7 +316,7 @@ function App() {
                     <img src={code1} alt="" />
                     <img src={code2} alt="" />
                   </div>
-                </div>
+                </motion.div>
               )}
               <div className="divider"></div>
               <div
@@ -304,7 +330,15 @@ function App() {
                 <p>2024</p>
               </div>
               {data && (
-                <div className="details-container">
+                <motion.div
+                  className="details-container"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{
+                    height: data ? "10%" : 0,
+                    opacity: data ? 1 : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: "linear" }}
+                >
                   <p>
                     Fui contratado por um ex-professor do SENAI para projetar o
                     site de sua empresa, garantindo responsividade e seguindo os
@@ -314,7 +348,7 @@ function App() {
                     empresa nas áreas de análise de dados e automação com IA,
                     utilizando o modo escuro, destaques em roxo, etc.
                   </p>
-                </div>
+                </motion.div>
               )}
               <div className="divider"></div>
               <div
@@ -328,7 +362,15 @@ function App() {
                 <p>2024</p>
               </div>
               {sup && (
-                <div className="details-container">
+                <motion.div
+                  className="details-container"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{
+                    height: sup ? "auto" : 0,
+                    opacity: sup ? 1 : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: "linear" }}
+                >
                   <p>
                     Meu primeiro projeto de identidade visual, desenvolvido para
                     a empresa onde trabalho até hoje. Além da logo, criei toda a
@@ -354,7 +396,7 @@ function App() {
                     <img src={sup1} alt="" />
                     <img src={sup2} alt="" />
                   </div>
-                </div>
+                </motion.div>
               )}
               <div className="divider"></div>
               <div
@@ -368,7 +410,15 @@ function App() {
                 <p>2024</p>
               </div>
               {port && (
-                <div className="details-container">
+                <motion.div
+                  className="details-container"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{
+                    height: port ? "auto" : 0,
+                    opacity: port ? 1 : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: "linear" }}
+                >
                   <p>
                     Meu portfólio de 2024, que considero como um filho de tanto
                     orgulho que tenho pelo que desenvolvi. Criei em meados de
@@ -401,7 +451,7 @@ function App() {
                     <img src={port1} alt="" />
                     <img src={port2} alt="" />
                   </div>
-                </div>
+                </motion.div>
               )}
               <div className="divider"></div>
               <div
@@ -415,7 +465,15 @@ function App() {
                 <p>2024</p>
               </div>
               {tcc && (
-                <div className="details-container">
+                <motion.div
+                  className="details-container"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{
+                    height: tcc ? "auto" : 0,
+                    opacity: tcc ? 1 : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: "linear" }}
+                >
                   <p>
                     <p>
                       Meu primeiro grande projeto, onde tive a oportunidade de
@@ -439,7 +497,7 @@ function App() {
                       <button className="github">Projeto no Github</button>
                     </a>
                   </div>
-                </div>
+                </motion.div>
               )}
               <div className="divider"></div>
             </div>
