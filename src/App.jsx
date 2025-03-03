@@ -15,6 +15,9 @@ import code2 from "./assets/code2.png";
 
 import pdf from "./assets/pdf/curriculo_artur_medeiros.pdf";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   let [prof, setProf] = useState(false);
   let [luiz, setLuiz] = useState(false);
@@ -23,8 +26,6 @@ function App() {
   let [sup, setSup] = useState(false);
   let [port, setPort] = useState(false);
   let [tcc, setTcc] = useState(false);
-
- 
 
   const handleClick = (option) => {
     switch (option) {
@@ -58,9 +59,9 @@ function App() {
     }
   };
 
-  const handlePdf = () => {
-    window.open(pdf, "_blank");
-  };
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
@@ -77,7 +78,7 @@ function App() {
         clickables={[
           "a",
           "p",
-          'h1',
+          "h1",
           'input[type="text"]',
           'input[type="email"]',
           'input[type="number"]',
@@ -130,16 +131,44 @@ function App() {
             </a>
           </nav>
         </div>
-        <div className="snap-container">
-          <section className="snap-section">
+        <div>
+          <section>
             <div className="main">
-              <h1>artur medeiros</h1>
-              <h1>web & design</h1>
-              <h1>@ são paulo - BR</h1>
-              <h1>potfolio © 2025</h1>
+              <h1
+                data-aos="fade-down"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                artur medeiros
+              </h1>
+              <h1
+                data-aos="fade-down"
+                data-aos-delay="200"
+                data-aos-duration="1500"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                web & design
+              </h1>
+              <h1
+                data-aos="fade-down"
+                data-aos-delay="300"
+                data-aos-duration="1750"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                @ são paulo - BR
+              </h1>
+              <h1
+                data-aos="fade-down"
+                data-aos-delay="400"
+                data-aos-duration="2000"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                potfolio © 2025
+              </h1>
             </div>
           </section>
-          <section className="snap-section">
+          <section>
             <div className="table-container">
               <div className="head">
                 <p>projetos</p>
