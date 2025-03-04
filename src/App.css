@@ -265,4 +265,8 @@ button {
   header {
     align-items: flex-start;
   }
+
+  .row{
+    align-items: center;
+  }
 }
