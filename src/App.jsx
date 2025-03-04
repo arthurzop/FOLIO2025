@@ -189,7 +189,7 @@ function App() {
                 data-aos-delay="400"
                 data-aos-duration="2000"
               >
-                potfolio © 2025
+                portfolio © 2025
               </h1>
               <a href="#target" className="indicator">
                 <img src={chevron} alt="scroll down indicator" />
@@ -360,7 +360,7 @@ function App() {
                   className="details-container"
                   initial={{ height: 0, opacity: 0 }}
                   animate={{
-                    height: data ? "10%" : 0,
+                    height: data ? "auto" : 0,
                     opacity: data ? 1 : 0,
                   }}
                   transition={{ duration: 0.3, ease: "linear" }}
