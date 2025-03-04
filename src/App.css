@@ -213,6 +213,10 @@ button {
   display: none;
 }
 
+.details-container {
+  will-change: transform, opacity;
+}
+
 @media screen and (width <= 660px) {
   /* menu expandido */
 
