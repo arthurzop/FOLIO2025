@@ -79,7 +79,6 @@ section {
 .indicator {
   animation: float 1s linear infinite;
 
-
   img {
     user-select: none;
     width: calc(1vw + 8px);
@@ -209,20 +208,44 @@ button {
   background-color: #383838;
 }
 
-.menu{
+.menu-toggle {
   display: none;
 }
 
 @media screen and (width <= 660px) {
+  .link-container {
+    position: absolute;
+    top: 5vh;
+    right: 0;
 
-  .menu{
-    display: block;
-    width: 24px;
-    color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2vh;
+
+    padding: 2vh;
+    font-size: 20px;
+
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: none;
+
+    background-color: #191919af;
+    backdrop-filter: blur(2px);
   }
 
-  .link-container{
-    display: none;
+  .link-container.open {
+    opacity: 1;
+    transform: translateY(0);
+    display: flex;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
   }
 
   .details-container {

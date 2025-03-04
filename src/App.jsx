@@ -14,6 +14,7 @@ import code1 from "./assets/code1.png";
 import code2 from "./assets/code2.png";
 import chevron from "./assets/chevron.svg";
 import menu from "./assets/menu.svg";
+import close from "./assets/close.svg";
 
 import pdf from "./assets/pdf/curriculo_artur_medeiros.pdf";
 
@@ -30,6 +31,12 @@ function App() {
   let [sup, setSup] = useState(false);
   let [port, setPort] = useState(false);
   let [tcc, setTcc] = useState(false);
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   const handleClick = (option) => {
     switch (option) {
@@ -67,6 +74,16 @@ function App() {
     AOS.init();
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".header") && isOpen) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [isOpen]);
+
   return (
     <>
       <AnimatedCursor
@@ -99,22 +116,11 @@ function App() {
 
       <div className="container">
         <header className="header" data-aos="fade-down" data-aos-duration="600">
-          <h1
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-          >
-            artur medeiros
-          </h1>
-          <nav className="link-container">
-            {/* target="_blank"
-                target="_blank"
-                target="_blank"
-                target="_blank" */}
+          <h1 onClick={() => window.scrollTo(0, 0)}>artur medeiros</h1>
+
+          <nav className={`link-container ${isOpen ? "open" : ""}`}>
             <a
-              onClick={() => {
-                window.open(pdf, "_blank");
-              }}
+              onClick={() => window.open(pdf, "_blank")}
               className="a-container cv"
             >
               Curriculum
@@ -141,7 +147,17 @@ function App() {
               Linkedin
             </a>
           </nav>
-          <img src={menu} alt="menu hamburger" className="menu"/>
+
+          <div
+            className="menu-toggle"
+            onClick={handleMenu}
+            aria-expanded={isOpen}
+          >
+            <img
+              src={isOpen ? close : menu}
+              alt={isOpen ? "Fechar menu" : "Abrir menu"}
+            />
+          </div>
         </header>
         <div id="top"></div>
         <div>
