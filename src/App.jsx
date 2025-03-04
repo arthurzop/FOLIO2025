@@ -147,16 +147,20 @@ function App() {
               Linkedin
             </a>
           </nav>
-
-          <div
-            className="menu-toggle"
-            onClick={handleMenu}
-            aria-expanded={isOpen}
-          >
-            <img
-              src={isOpen ? close : menu}
-              alt={isOpen ? "Fechar menu" : "Abrir menu"}
+          <div className="menu-toggle">
+            <input
+              class="check-icon"
+              id="check-icon"
+              name="check-icon"
+              type="checkbox"
+              onClick={handleMenu}
+              aria-expanded={isOpen}
             />
+            <label class="icon-menu" for="check-icon">
+              <div class="bar bar--1"></div>
+              <div class="bar bar--2"></div>
+              <div class="bar bar--3"></div>
+            </label>
           </div>
         </header>
         <div id="top"></div>
