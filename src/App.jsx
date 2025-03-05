@@ -159,28 +159,28 @@ function App() {
           <nav className={`link-container ${isOpen ? "open" : ""}`}>
             <a
               onClick={() => window.open(pdf, "_blank")}
-              className="a-container cv"
+              className="a-container"
             >
               Curriculum
             </a>
             <a
               href="https://www.behance.net/arthurzop"
               target="_blank"
-              className="a-container be"
+              className="a-container"
             >
               Behance
             </a>
             <a
               href="https://github.com/arthurzop"
               target="_blank"
-              className="a-container gi"
+              className="a-container"
             >
               Github
             </a>
             <a
               href="https://www.linkedin.com/in/artur-medeiros-7169b8266/"
               target="_blank"
-              className="a-container li"
+              className="a-container"
             >
               Linkedin
             </a>
@@ -294,6 +294,18 @@ function App() {
             })}
           </div>
         </section>
+        <div className="credits-container">
+          <p>
+            Made primarily for testing. Heavily inspired by
+            <a
+              href="https://www.olivierlarose.com"
+              className="a-container"
+              target="_blank"
+            >
+              Olivier Larose's Portfolio
+            </a>
+          </p>
+        </div>
       </div>
     </>
   );
