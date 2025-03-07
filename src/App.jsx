@@ -288,7 +288,8 @@ function App() {
                       </div>
                     </motion.div>
                   )}
-                  <div className="divider"></div>
+
+                  <div className="divider" id="target"></div>
                 </div>
               );
             })}
