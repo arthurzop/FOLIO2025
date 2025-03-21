@@ -5,6 +5,7 @@
   font-family: "Bricolage Grotesque", serif;
   scroll-behavior: smooth;
   color: #f8f9fa;
+  position: relative;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
   position: fixed;
   top: 0;
   color: #f8f9fa;
-  background-color: #191919af;
+  background-color: #121212af;
   backdrop-filter: blur(2px);
 }
 
